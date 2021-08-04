@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo shopee</title>
+    <link rel="icon" href="/source/assets/img/react.png" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            Kênh người bán
+                        </li>
+                        <li class="header__navbar-item">
+                            Trở thành Người bán Shopee
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--has--qr">
+                            Tải ứng dụng
+                            <div class="header__qrcode">
+                                <img src="/source/assets/img/QR-CODE.png" alt="qr-code" class="qr-img">
+                                <div class="qr-apps">
+                                        <img src="/source/assets/img/Appstore.png" alt="apps-store" class="header-dowload-img">                                 
+                                        <img src="/source/assets/img/Google play.png" alt="ggplay" class="header-dowload-img">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item-none">
+                            Kết nối
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fab fa-facebook"></i>
+                            </a>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item-none">
+                          <a href="" class="header-navbar-item-link">
+                            <i class="header__navbar-icon far fa-bell"></i>
+                              Thông báo
+                          </a>
+                            <div class="header-notifycation">
+                                <header class="header__notify-header">
+                                    <h3>Thông Báo Mới Nhận</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item-viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="/source/assets/img/ohui.jpg" alt="ohui" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Mỹ phẩm Ohui chính hãng</span>
+                                                <span class="header__notify-description">Mô tả của mĩ phẩm</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item-viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="/source/assets/img/ohui.jpg" alt="ohui" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Mỹ phẩm Ohui chính hãng</span>
+                                                <span class="header__notify-description">Mô tả của mĩ phẩm</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item-viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="/source/assets/img/ohui.jpg" alt="ohui" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Mỹ phẩm Ohui chính hãng</span>
+                                                <span class="header__notify-description">Mô tả của mĩ phẩm</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn">
+                                        Xem tất cả
+                                    </a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item-none">
+                            <a href="" class="header-navbar-item-link">
+                                <i class="header__navbar-icon far fa-question-circle"></i>
+                                Hỗ trợ
+                            </a>
+                        </li>
+                        <!-- <li class="header__navbar-item  header__navbar-item--bold">
+                            Đăng kí
+                        </li>
+                        <li class="header__navbar-item  header__navbar-item--bold">
+                            Đăng nhập
+                        </li> -->
+                        <li class="header__navbar-item header__navbar-item-user">
+                            <i class="user__name far fa-user"></i>
+                            Lê Tuấn Minh
+                            <div class="header__navbar-info-user">
+                                <ul class="header__navbar-info-list">
+                                    <li class="header__navbar-info-list-item">
+                                        <a href="">Tài khoản của tôi</a>
+                                    </li>
+                                    <li class="header__navbar-info-list-item">
+                                        <a href="">Địa chỉ của tôi</a>
+                                    </li>
+                                    <li class="header__navbar-info-list-item">
+                                        <a href="">Đơn mua</a>
+                                    </li>
+                                    <li class="header__navbar-info-list-item">
+                                        <a href="">Đăng xuất</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-with-search">
+                    <div class="header__logo">
+                        <i class="logo-applepay fab fa-apple-pay"></i>
+                    </div>
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
+                                <div class="header__search-history">
+                                <h3 class="header__search-history-heading">
+                                    Lịch sử tìm kiếm
+                                </h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">Kem dưỡng</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Kem dưỡng da</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Kem tây</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header__search-select">
+                            <span class="header__search-select-lable">Trong Shop</span>
+                            <i class="header__search-select-icon fas fa-chevron-down"></i>
+                            <ul class="header__search-option">
+                                <li class="header__search-option-item">
+                                   <a href="">Trong shop</a>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                                <li class="header__search-option-item">
+                                   <a href="">Ngoài shop</a>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="header__search-btn"><i class="header__search-btn-icon fas fa-search"></i></button>
+                    </div>
+                    <div class="header__cart">
+                        <i class="header__cart-icon fas fa-shopping-cart"></i>
+                        <div class="header__cart-noti">
+                            <span class="header__cart-noti-msg">
+                                Chưa có sản phẩm
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>         
+        </div>
+        <div class="container">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__heading"><i class="category__heading-icon fas fa-list-ul"></i> 
+                                Danh mục
+                            
+                            </h3>
+                            <ul class="category-list">
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">
+                                        Sản phẩm
+                                    </a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">
+                                        Áo thun
+                                    </a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">
+                                        Áo sơ mi
+                                    </a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">
+                                        Quần
+                                    </a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">
+                                        Đầm
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="product__header">
+                            <span class="product-item-lable">Sắp xếp theo</span>
+                            <div class="btn-list">
+                                <button class="btn">Phổ biến</button>
+                                <button class="btn__primary">Mới nhất</button>
+                                <button class="btn">Bán chạy</button>
+                            </div>
+                            <div class="select-input">
+                                <div class="select-input-lable">
+                                    <span class="">Giá</span> 
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="product__page">
+                                <span class="product__page-number">1/14</span>
+                                <button class="product__page-btn">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button class="product__page-btn">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="home-product">
+                                <div class="grid__row">
+                                    <div class="grid__column-2-4">
+                                        <div class="home-product-item">
+                                            <div class="home-product-top" style="background-image: url(https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);">
+                                            </div>
+                                            <h4 class="home-product-heading">
+                                                KÍNH CƯỜNG LỰC IPAD 2-3-4 Air 1-2 - 3 4 Mini 1-2-3 mini 4-5 Ipad 9.7' Ipad 10.5 Ipad 11 Gen 5 6 7 8 ( tặng bút cảm ứng)
+                                            </h4>
+                                            <div class="home-product-price">
+                                                <span class="price-old">1.200.000đ</span>
+                                                <span class="price-current">999.000đ</span>
+                                            </div>
+                                            <div class="home-product-action">
+                                                <div class="home-product-icon">
+                                                    <span class="home-product-like">
+                                                        <i class="far fa-heart"></i>
+                                                        <!-- <i class="fas fa-heart"></i> -->
+                                                    </span>
+                                                    <div class="home-product-star">
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <span class="home-product-icon-text">đã bán 200</span>
+                                                    </div>
+                                                </div>
+                                                <div class="home-product-footer">
+                                                    <span class="home-product-brand">Ohui</span>
+                                                    <span class="home-product-origin">Nhật bản<nav></nav></span>
+                                                </div>
+                                                <div class="product-favourite">
+                                                    <i class="fas fa-check"></i>
+                                                    Yêu thích
+                                                </div>
+                                                <div class="product-sale-off">
+                                                    <span class="product-sale-off-value">10%</span>
+                                                    <span class="product-sale-off-label">
+                                                        Giảm
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2-4">
+                                        <div class="home-product-item">
+                                            <div class="home-product-top" style="background-image: url(https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);">
+                                            </div>
+                                            <h4 class="home-product-heading">
+                                                KÍNH CƯỜNG LỰC IPAD 2-3-4 Air 1-2 - 3 4 Mini 1-2-3 mini 4-5 Ipad 9.7' Ipad 10.5 Ipad 11 Gen 5 6 7 8 ( tặng bút cảm ứng)
+                                            </h4>
+                                            <div class="home-product-price">
+                                                <span class="price-old">1.200.000đ</span>
+                                                <span class="price-current">999.000đ</span>
+                                            </div>
+                                            <div class="home-product-action">
+                                                <div class="home-product-icon">
+                                                    <span class="home-product-like">
+                                                        <i class="far fa-heart"></i>
+                                                        <!-- <i class="fas fa-heart"></i> -->
+                                                    </span>
+                                                    <div class="home-product-star">
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <span class="home-product-icon-text">đã bán 200</span>
+                                                    </div>
+                                                </div>
+                                                <div class="home-product-footer">
+                                                    <span class="home-product-brand">Ohui</span>
+                                                    <span class="home-product-origin">Nhật bản<nav></nav></span>
+                                                </div>
+                                                <div class="product-favourite">
+                                                    <i class="fas fa-check"></i>
+                                                    Yêu thích
+                                                </div>
+                                                <div class="product-sale-off">
+                                                    <span class="product-sale-off-value">10%</span>
+                                                    <span class="product-sale-off-label">
+                                                        Giảm
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2-4">
+                                        <div class="home-product-item">
+                                            <div class="home-product-top" style="background-image: url(https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);">
+                                            </div>
+                                            <h4 class="home-product-heading">
+                                                KÍNH CƯỜNG LỰC IPAD 2-3-4 Air 1-2 - 3 4 Mini 1-2-3 mini 4-5 Ipad 9.7' Ipad 10.5 Ipad 11 Gen 5 6 7 8 ( tặng bút cảm ứng)
+                                            </h4>
+                                            <div class="home-product-price">
+                                                <span class="price-old">1.200.000đ</span>
+                                                <span class="price-current">999.000đ</span>
+                                            </div>
+                                            <div class="home-product-action">
+                                                <div class="home-product-icon">
+                                                    <span class="home-product-like">
+                                                        <i class="far fa-heart"></i>
+                                                        <!-- <i class="fas fa-heart"></i> -->
+                                                    </span>
+                                                    <div class="home-product-star">
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <span class="home-product-icon-text">đã bán 200</span>
+                                                    </div>
+                                                </div>
+                                                <div class="home-product-footer">
+                                                    <span class="home-product-brand">Ohui</span>
+                                                    <span class="home-product-origin">Nhật bản<nav></nav></span>
+                                                </div>
+                                                <div class="product-favourite">
+                                                    <i class="fas fa-check"></i>
+                                                    Yêu thích
+                                                </div>
+                                                <div class="product-sale-off">
+                                                    <span class="product-sale-off-value">10%</span>
+                                                    <span class="product-sale-off-label">
+                                                        Giảm
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2-4">
+                                        <div class="home-product-item">
+                                            <div class="home-product-top" style="background-image: url(https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);">
+                                            </div>
+                                            <h4 class="home-product-heading">
+                                                KÍNH CƯỜNG LỰC IPAD 2-3-4 Air 1-2 - 3 4 Mini 1-2-3 mini 4-5 Ipad 9.7' Ipad 10.5 Ipad 11 Gen 5 6 7 8 ( tặng bút cảm ứng)
+                                            </h4>
+                                            <div class="home-product-price">
+                                                <span class="price-old">1.200.000đ</span>
+                                                <span class="price-current">999.000đ</span>
+                                            </div>
+                                            <div class="home-product-action">
+                                                <div class="home-product-icon">
+                                                    <span class="home-product-like">
+                                                        <i class="far fa-heart"></i>
+                                                        <!-- <i class="fas fa-heart"></i> -->
+                                                    </span>
+                                                    <div class="home-product-star">
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <span class="home-product-icon-text">đã bán 200</span>
+                                                    </div>
+                                                </div>
+                                                <div class="home-product-footer">
+                                                    <span class="home-product-brand">Ohui</span>
+                                                    <span class="home-product-origin">Nhật bản<nav></nav></span>
+                                                </div>
+                                                <div class="product-favourite">
+                                                    <i class="fas fa-check"></i>
+                                                    Yêu thích
+                                                </div>
+                                                <div class="product-sale-off">
+                                                    <span class="product-sale-off-value">10%</span>
+                                                    <span class="product-sale-off-label">
+                                                        Giảm
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2-4">
+                                        <div class="home-product-item">
+                                            <div class="home-product-top" style="background-image: url(https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);">
+                                            </div>
+                                            <h4 class="home-product-heading">
+                                                KÍNH CƯỜNG LỰC IPAD 2-3-4 Air 1-2 - 3 4 Mini 1-2-3 mini 4-5 Ipad 9.7' Ipad 10.5 Ipad 11 Gen 5 6 7 8 ( tặng bút cảm ứng)
+                                            </h4>
+                                            <div class="home-product-price">
+                                                <span class="price-old">1.200.000đ</span>
+                                                <span class="price-current">999.000đ</span>
+                                            </div>
+                                            <div class="home-product-action">
+                                                <div class="home-product-icon">
+                                                    <span class="home-product-like">
+                                                        <i class="far fa-heart"></i>
+                                                        <!-- <i class="fas fa-heart"></i> -->
+                                                    </span>
+                                                    <div class="home-product-star">
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <span class="home-product-icon-text">đã bán 200</span>
+                                                    </div>
+                                                </div>
+                                                <div class="home-product-footer">
+                                                    <span class="home-product-brand">Ohui</span>
+                                                    <span class="home-product-origin">Nhật bản<nav></nav></span>
+                                                </div>
+                                                <div class="product-favourite">
+                                                    <i class="fas fa-check"></i>
+                                                    Yêu thích
+                                                </div>
+                                                <div class="product-sale-off">
+                                                    <span class="product-sale-off-value">10%</span>
+                                                    <span class="product-sale-off-label">
+                                                        Giảm
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2-4">
+                                        <div class="home-product-item">
+                                            <div class="home-product-top" style="background-image: url(https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);">
+                                            </div>
+                                            <h4 class="home-product-heading">
+                                                KÍNH CƯỜNG LỰC IPAD 2-3-4 Air 1-2 - 3 4 Mini 1-2-3 mini 4-5 Ipad 9.7' Ipad 10.5 Ipad 11 Gen 5 6 7 8 ( tặng bút cảm ứng)
+                                            </h4>
+                                            <div class="home-product-price">
+                                                <span class="price-old">1.200.000đ</span>
+                                                <span class="price-current">999.000đ</span>
+                                            </div>
+                                            <div class="home-product-action">
+                                                <div class="home-product-icon">
+                                                    <span class="home-product-like">
+                                                        <i class="far fa-heart"></i>
+                                                        <!-- <i class="fas fa-heart"></i> -->
+                                                    </span>
+                                                    <div class="home-product-star">
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <span class="home-product-icon-text">đã bán 200</span>
+                                                    </div>
+                                                </div>
+                                                <div class="home-product-footer">
+                                                    <span class="home-product-brand">Ohui</span>
+                                                    <span class="home-product-origin">Nhật bản<nav></nav></span>
+                                                </div>
+                                                <div class="product-favourite">
+                                                    <i class="fas fa-check"></i>
+                                                    Yêu thích
+                                                </div>
+                                                <div class="product-sale-off">
+                                                    <span class="product-sale-off-value">10%</span>
+                                                    <span class="product-sale-off-label">
+                                                        Giảm
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2-4">
+                                        <div class="home-product-item">
+                                            <div class="home-product-top" style="background-image: url(https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);">
+                                            </div>
+                                            <h4 class="home-product-heading">
+                                                KÍNH CƯỜNG LỰC IPAD 2-3-4 Air 1-2 - 3 4 Mini 1-2-3 mini 4-5 Ipad 9.7' Ipad 10.5 Ipad 11 Gen 5 6 7 8 ( tặng bút cảm ứng)
+                                            </h4>
+                                            <div class="home-product-price">
+                                                <span class="price-old">1.200.000đ</span>
+                                                <span class="price-current">999.000đ</span>
+                                            </div>
+                                            <div class="home-product-action">
+                                                <div class="home-product-icon">
+                                                    <span class="home-product-like">
+                                                        <i class="far fa-heart"></i>
+                                                        <!-- <i class="fas fa-heart"></i> -->
+                                                    </span>
+                                                    <div class="home-product-star">
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <span class="home-product-icon-text">đã bán 200</span>
+                                                    </div>
+                                                </div>
+                                                <div class="home-product-footer">
+                                                    <span class="home-product-brand">Ohui</span>
+                                                    <span class="home-product-origin">Nhật bản<nav></nav></span>
+                                                </div>
+                                                <div class="product-favourite">
+                                                    <i class="fas fa-check"></i>
+                                                    Yêu thích
+                                                </div>
+                                                <div class="product-sale-off">
+                                                    <span class="product-sale-off-value">10%</span>
+                                                    <span class="product-sale-off-label">
+                                                        Giảm
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2-4">
+                                        <div class="home-product-item">
+                                            <div class="home-product-top" style="background-image: url(https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);">
+                                            </div>
+                                            <h4 class="home-product-heading">
+                                                KÍNH CƯỜNG LỰC IPAD 2-3-4 Air 1-2 - 3 4 Mini 1-2-3 mini 4-5 Ipad 9.7' Ipad 10.5 Ipad 11 Gen 5 6 7 8 ( tặng bút cảm ứng)
+                                            </h4>
+                                            <div class="home-product-price">
+                                                <span class="price-old">1.200.000đ</span>
+                                                <span class="price-current">999.000đ</span>
+                                            </div>
+                                            <div class="home-product-action">
+                                                <div class="home-product-icon">
+                                                    <span class="home-product-like">
+                                                        <i class="far fa-heart"></i>
+                                                        <!-- <i class="fas fa-heart"></i> -->
+                                                    </span>
+                                                    <div class="home-product-star">
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <span class="home-product-icon-text">đã bán 200</span>
+                                                    </div>
+                                                </div>
+                                                <div class="home-product-footer">
+                                                    <span class="home-product-brand">Ohui</span>
+                                                    <span class="home-product-origin">Nhật bản<nav></nav></span>
+                                                </div>
+                                                <div class="product-favourite">
+                                                    <i class="fas fa-check"></i>
+                                                    Yêu thích
+                                                </div>
+                                                <div class="product-sale-off">
+                                                    <span class="product-sale-off-value">10%</span>
+                                                    <span class="product-sale-off-label">
+                                                        Giảm
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2-4">
+                                        <div class="home-product-item">
+                                            <div class="home-product-top" style="background-image: url(https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);">
+                                            </div>
+                                            <h4 class="home-product-heading">
+                                                KÍNH CƯỜNG LỰC IPAD 2-3-4 Air 1-2 - 3 4 Mini 1-2-3 mini 4-5 Ipad 9.7' Ipad 10.5 Ipad 11 Gen 5 6 7 8 ( tặng bút cảm ứng)
+                                            </h4>
+                                            <div class="home-product-price">
+                                                <span class="price-old">1.200.000đ</span>
+                                                <span class="price-current">999.000đ</span>
+                                            </div>
+                                            <div class="home-product-action">
+                                                <div class="home-product-icon">
+                                                    <span class="home-product-like">
+                                                        <i class="far fa-heart"></i>
+                                                        <!-- <i class="fas fa-heart"></i> -->
+                                                    </span>
+                                                    <div class="home-product-star">
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <span class="home-product-icon-text">đã bán 200</span>
+                                                    </div>
+                                                </div>
+                                                <div class="home-product-footer">
+                                                    <span class="home-product-brand">Ohui</span>
+                                                    <span class="home-product-origin">Nhật bản<nav></nav></span>
+                                                </div>
+                                                <div class="product-favourite">
+                                                    <i class="fas fa-check"></i>
+                                                    Yêu thích
+                                                </div>
+                                                <div class="product-sale-off">
+                                                    <span class="product-sale-off-value">10%</span>
+                                                    <span class="product-sale-off-label">
+                                                        Giảm
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2-4">
+                                        <div class="home-product-item">
+                                            <div class="home-product-top" style="background-image: url(https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);">
+                                            </div>
+                                            <h4 class="home-product-heading">
+                                                KÍNH CƯỜNG LỰC IPAD 2-3-4 Air 1-2 - 3 4 Mini 1-2-3 mini 4-5 Ipad 9.7' Ipad 10.5 Ipad 11 Gen 5 6 7 8 ( tặng bút cảm ứng)
+                                            </h4>
+                                            <div class="home-product-price">
+                                                <span class="price-old">1.200.000đ</span>
+                                                <span class="price-current">999.000đ</span>
+                                            </div>
+                                            <div class="home-product-action">
+                                                <div class="home-product-icon">
+                                                    <span class="home-product-like">
+                                                        <i class="far fa-heart"></i>
+                                                        <!-- <i class="fas fa-heart"></i> -->
+                                                    </span>
+                                                    <div class="home-product-star">
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <span class="home-product-icon-text">đã bán 200</span>
+                                                    </div>
+                                                </div>
+                                                <div class="home-product-footer">
+                                                    <span class="home-product-brand">Ohui</span>
+                                                    <span class="home-product-origin">Nhật bản<nav></nav></span>
+                                                </div>
+                                                <div class="product-favourite">
+                                                    <i class="fas fa-check"></i>
+                                                    Yêu thích
+                                                </div>
+                                                <div class="product-sale-off">
+                                                    <span class="product-sale-off-value">10%</span>
+                                                    <span class="product-sale-off-label">
+                                                        Giảm
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2-4">
+                                        <div class="home-product-item">
+                                            <div class="home-product-top" style="background-image: url(https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);">
+                                            </div>
+                                            <h4 class="home-product-heading">
+                                                KÍNH CƯỜNG LỰC IPAD 2-3-4 Air 1-2 - 3 4 Mini 1-2-3 mini 4-5 Ipad 9.7' Ipad 10.5 Ipad 11 Gen 5 6 7 8 ( tặng bút cảm ứng)
+                                            </h4>
+                                            <div class="home-product-price">
+                                                <span class="price-old">1.200.000đ</span>
+                                                <span class="price-current">999.000đ</span>
+                                            </div>
+                                            <div class="home-product-action">
+                                                <div class="home-product-icon">
+                                                    <span class="home-product-like">
+                                                        <i class="far fa-heart"></i>
+                                                        <!-- <i class="fas fa-heart"></i> -->
+                                                    </span>
+                                                    <div class="home-product-star">
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <span class="home-product-icon-text">đã bán 200</span>
+                                                    </div>
+                                                </div>
+                                                <div class="home-product-footer">
+                                                    <span class="home-product-brand">Ohui</span>
+                                                    <span class="home-product-origin">Nhật bản<nav></nav></span>
+                                                </div>
+                                                <div class="product-favourite">
+                                                    <i class="fas fa-check"></i>
+                                                    Yêu thích
+                                                </div>
+                                                <div class="product-sale-off">
+                                                    <span class="product-sale-off-value">10%</span>
+                                                    <span class="product-sale-off-label">
+                                                        Giảm
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2-4">
+                                        <div class="home-product-item">
+                                            <div class="home-product-top" style="background-image: url(https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);">
+                                            </div>
+                                            <h4 class="home-product-heading">
+                                                KÍNH CƯỜNG LỰC IPAD 2-3-4 Air 1-2 - 3 4 Mini 1-2-3 mini 4-5 Ipad 9.7' Ipad 10.5 Ipad 11 Gen 5 6 7 8 ( tặng bút cảm ứng)
+                                            </h4>
+                                            <div class="home-product-price">
+                                                <span class="price-old">1.200.000đ</span>
+                                                <span class="price-current">999.000đ</span>
+                                            </div>
+                                            <div class="home-product-action">
+                                                <div class="home-product-icon">
+                                                    <span class="home-product-like">
+                                                        <i class="far fa-heart"></i>
+                                                        <!-- <i class="fas fa-heart"></i> -->
+                                                    </span>
+                                                    <div class="home-product-star">
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <span class="home-product-icon-text">đã bán 200</span>
+                                                    </div>
+                                                </div>
+                                                <div class="home-product-footer">
+                                                    <span class="home-product-brand">Ohui</span>
+                                                    <span class="home-product-origin">Nhật bản<nav></nav></span>
+                                                </div>
+                                                <div class="product-favourite">
+                                                    <i class="fas fa-check"></i>
+                                                    Yêu thích
+                                                </div>
+                                                <div class="product-sale-off">
+                                                    <span class="product-sale-off-value">10%</span>
+                                                    <span class="product-sale-off-label">
+                                                        Giảm
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2-4">
+                                        <div class="home-product-item">
+                                            <div class="home-product-top" style="background-image: url(https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);">
+                                            </div>
+                                            <h4 class="home-product-heading">
+                                                KÍNH CƯỜNG LỰC IPAD 2-3-4 Air 1-2 - 3 4 Mini 1-2-3 mini 4-5 Ipad 9.7' Ipad 10.5 Ipad 11 Gen 5 6 7 8 ( tặng bút cảm ứng)
+                                            </h4>
+                                            <div class="home-product-price">
+                                                <span class="price-old">1.200.000đ</span>
+                                                <span class="price-current">999.000đ</span>
+                                            </div>
+                                            <div class="home-product-action">
+                                                <div class="home-product-icon">
+                                                    <span class="home-product-like">
+                                                        <i class="far fa-heart"></i>
+                                                        <!-- <i class="fas fa-heart"></i> -->
+                                                    </span>
+                                                    <div class="home-product-star">
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <span class="home-product-icon-text">đã bán 200</span>
+                                                    </div>
+                                                </div>
+                                                <div class="home-product-footer">
+                                                    <span class="home-product-brand">Ohui</span>
+                                                    <span class="home-product-origin">Nhật bản<nav></nav></span>
+                                                </div>
+                                                <div class="product-favourite">
+                                                    <i class="fas fa-check"></i>
+                                                    Yêu thích
+                                                </div>
+                                                <div class="product-sale-off">
+                                                    <span class="product-sale-off-value">10%</span>
+                                                    <span class="product-sale-off-label">
+                                                        Giảm
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2-4">
+                                        <div class="home-product-item">
+                                            <div class="home-product-top" style="background-image: url(https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);">
+                                            </div>
+                                            <h4 class="home-product-heading">
+                                                KÍNH CƯỜNG LỰC IPAD 2-3-4 Air 1-2 - 3 4 Mini 1-2-3 mini 4-5 Ipad 9.7' Ipad 10.5 Ipad 11 Gen 5 6 7 8 ( tặng bút cảm ứng)
+                                            </h4>
+                                            <div class="home-product-price">
+                                                <span class="price-old">1.200.000đ</span>
+                                                <span class="price-current">999.000đ</span>
+                                            </div>
+                                            <div class="home-product-action">
+                                                <div class="home-product-icon">
+                                                    <span class="home-product-like">
+                                                        <i class="far fa-heart"></i>
+                                                        <!-- <i class="fas fa-heart"></i> -->
+                                                    </span>
+                                                    <div class="home-product-star">
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <span class="home-product-icon-text">đã bán 200</span>
+                                                    </div>
+                                                </div>
+                                                <div class="home-product-footer">
+                                                    <span class="home-product-brand">Ohui</span>
+                                                    <span class="home-product-origin">Nhật bản<nav></nav></span>
+                                                </div>
+                                                <div class="product-favourite">
+                                                    <i class="fas fa-check"></i>
+                                                    Yêu thích
+                                                </div>
+                                                <div class="product-sale-off">
+                                                    <span class="product-sale-off-value">10%</span>
+                                                    <span class="product-sale-off-label">
+                                                        Giảm
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2-4">
+                                        <div class="home-product-item">
+                                            <div class="home-product-top" style="background-image: url(https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);">
+                                            </div>
+                                            <h4 class="home-product-heading">
+                                                KÍNH CƯỜNG LỰC IPAD 2-3-4 Air 1-2 - 3 4 Mini 1-2-3 mini 4-5 Ipad 9.7' Ipad 10.5 Ipad 11 Gen 5 6 7 8 ( tặng bút cảm ứng)
+                                            </h4>
+                                            <div class="home-product-price">
+                                                <span class="price-old">1.200.000đ</span>
+                                                <span class="price-current">999.000đ</span>
+                                            </div>
+                                            <div class="home-product-action">
+                                                <div class="home-product-icon">
+                                                    <span class="home-product-like">
+                                                        <i class="far fa-heart"></i>
+                                                        <!-- <i class="fas fa-heart"></i> -->
+                                                    </span>
+                                                    <div class="home-product-star">
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <i class="home-product-star-icon fas fa-star"></i>
+                                                        <span class="home-product-icon-text">đã bán 200</span>
+                                                    </div>
+                                                </div>
+                                                <div class="home-product-footer">
+                                                    <span class="home-product-brand">Ohui</span>
+                                                    <span class="home-product-origin">Nhật bản<nav></nav></span>
+                                                </div>
+                                                <div class="product-favourite">
+                                                    <i class="fas fa-check"></i>
+                                                    Yêu thích
+                                                </div>
+                                                <div class="product-sale-off">
+                                                    <span class="product-sale-off-value">10%</span>
+                                                    <span class="product-sale-off-label">
+                                                        Giảm
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <ul class="pagination">
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item-link">
+                                    <i class="pagination-icon fas fa-chevron-left"></i>
+                                </a>
+                                <a href="#" class="pagination-item-link">
+                                    1
+                                </a>
+                                <a href="#" class="pagination-item-link">
+                                    2
+                                </a>
+                                <a href="#" class="pagination-item-link">
+                                    3
+                                </a>
+                                <a href="#" class="pagination-item-link">
+                                    ...
+                                </a>
+                                <a href="#" class="pagination-item-link">
+                                    10
+                                </a>
+                                <a href="#" class="pagination-item-link">
+                                    <i class="pagination-icon fas fa-chevron-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+    <!-- Modal layout -->
+    <div class="modal">
+        <div class="modal__overlay">
+        </div>
+        <div class="modal__body">
+            <div class="modal__inner">
+                <!-- Form Login/Register -->
+                <div class="auth-form">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng kí</h3>
+                        <a href="" class="auth-form__header">Đăng nhập</a>
+                    </div>
+                    <div class="input">
+                        <form action="" class="input-text">
+                            <input class="user-name" type="text" placeholder="Tên đăng nhập">
+                            <input class="password" type="password" placeholder="Mật khẩu"> 
+                        </form>
+                    </div>               
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
